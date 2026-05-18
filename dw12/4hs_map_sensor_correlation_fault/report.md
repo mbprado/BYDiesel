@@ -7,6 +7,7 @@
 - Turbo System: Sequential bi-turbo diesel
 - Transmission: AM6 automatic gearbox
 - Diagnostic Tool: DiagBox
+- Mileage: 214000 KM
 
 ---
 # Previous disagnostics
