@@ -18,7 +18,7 @@ However with a deeper analisys, proper test and tools, this soon proved incorrec
 ---
 # Diagnostic tools
 
-- ActiaXS in conjunction with Diagbox(PSA Oficcial scanner) was used to collect live data read, DTC, freeze frame and actuator tests.
+- ActiaXS in conjunction with Diagbox(PSA Official scanner) was used to collect live data read, DTC, freeze frame and actuator tests.
 - Documentation could be accessed using Citroen Service Box and Parts-catalog.
 
 
