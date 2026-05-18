@@ -9,6 +9,19 @@
 - Diagnostic Tool: DiagBox
 
 ---
+# Previous disagnostics
+
+The car was diagnosed by previous professionals: a full turbo replacement required, considering the DTC pointing to turbo and obivious loss of boost.  
+However with a deeper analisys, proper test and tools, this soon proved incorrect. 
+
+---
+# Diagnostic tools
+
+- ActiaXS in conjunction with Diagbox(PSA Oficcial scanner) was used to collect live data read, DTC, freeze frame and actuator tests.
+- Documentation could be accessed using Citroen Service Box and Parts-catalog.
+
+
+---
 
 # Initial Symptoms
 
@@ -18,6 +31,7 @@ The vehicle presented intermittent turbo-related behavior:
 - Sometimes the engine had low power / turbo issues
 - Intermittent turbo underboost behavior
 - Faults stored in both engine ECU and gearbox ECU
+- Constant Limb-home mode
 
 One important observation from the beginning:
 
@@ -39,6 +53,8 @@ Instead, the vehicle alternated between normal and faulty operation.
 # Initial Fault Codes
 
 ## Gearbox ECU (AM6)
+
+<img width="1732" height="732" alt="Screenshot 2026-04-21 at 17 00 53" src="https://github.com/user-attachments/assets/635d9048-33e1-4346-86f0-ad3f4df1be7d" />
 
 ### U1208
 
@@ -68,6 +84,8 @@ At this stage, this was considered a secondary consequence rather than the prima
 ---
 
 ## Engine ECU (EDC16CP39)
+
+<img width="1936" height="799" alt="Screenshot 2026-04-21 at 16 50 53" src="https://github.com/user-attachments/assets/5f69aeda-898f-4b8e-87ff-67804d11f567" />
 
 ### P023E
 
@@ -210,6 +228,7 @@ This became the critical diagnostic test.
 The following measurements were collected.
 
 ## Air Circuit Information
+<img width="2048" height="1280" alt="Screenshot 2026-04-22 at 15 45 44" src="https://github.com/user-attachments/assets/a645b32d-6810-41f2-a84e-12dd2c882d93" />
 
 Values observed:
 
@@ -226,6 +245,8 @@ Although not definitive by themselves, these inconsistencies reinforced suspicio
 ---
 
 # Critical Pressure Measurements (Engine OFF)
+
+<img width="2048" height="1280" alt="Screenshot 2026-04-22 at 15 46 53" src="https://github.com/user-attachments/assets/08aa78cf-9dd8-49e3-a2bd-d8fba3e09653" />
 
 ## Values obtained
 
@@ -289,10 +310,11 @@ Location:
 Function:
 
 - Turbo pressure monitoring
-n
+
 ---
 
 # Physical Sensor Identification
+<img width="844" height="719" alt="image" src="https://github.com/user-attachments/assets/6ef338da-a088-44a0-afdc-5823ffba79e0" />
 
 The engine bay was inspected.
 
@@ -362,6 +384,7 @@ This demonstrated:
 ---
 
 # OEM Sensor Installation
+<img width="700" height="525" alt="e9e8ac8f13b2e631c078715039484430" src="https://github.com/user-attachments/assets/9a408798-34ae-4863-b2b8-18cb0900aebb" />
 
 A genuine original sensor was then ordered and installed.
 
