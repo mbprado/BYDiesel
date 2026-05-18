@@ -444,7 +444,7 @@ Intermittent behavior strongly suggested:
 - Wiring issue
 - Control issue
 
-rather than catastrophic mechanical turbo damage.
+rather than catastrophic mechanical turbo damage. Replacing the turbocharger in this case wouldn't solve the problem.
 
 ---
 
