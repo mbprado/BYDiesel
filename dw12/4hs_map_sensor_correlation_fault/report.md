@@ -229,7 +229,8 @@ This became the critical diagnostic test.
 The following measurements were collected.
 
 ## Air Circuit Information
-<img width="2048" height="1280" alt="Screenshot 2026-04-22 at 15 45 44" src="https://github.com/user-attachments/assets/a645b32d-6810-41f2-a84e-12dd2c882d93" />
+<img width="2042" height="1154" alt="Screenshot 2026-04-22 at 15 45 44" src="https://github.com/user-attachments/assets/d4b0ce5f-7413-4206-8198-2378028551a9" />
+
 
 Values observed:
 
@@ -247,7 +248,7 @@ Although not definitive by themselves, these inconsistencies reinforced suspicio
 
 # Critical Pressure Measurements (Engine OFF)
 
-<img width="2048" height="1280" alt="Screenshot 2026-04-22 at 15 46 53" src="https://github.com/user-attachments/assets/08aa78cf-9dd8-49e3-a2bd-d8fba3e09653" />
+<img width="2045" height="1148" alt="Screenshot 2026-04-22 at 15 46 53" src="https://github.com/user-attachments/assets/fe086676-b817-4ead-9fe6-f6c6350fee32" />
 
 ## Values obtained
 
