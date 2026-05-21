@@ -32,3 +32,39 @@ The vehicle presented intermittent adblue alerts and mileage countdown for start
 - It doen't affect car's performance.
 - Prevents Start/Stop (echo)
 - Faults stored in  ECU 
+
+# Initial Fault Codes
+
+## Engine ECU 
+
+<img width="1581" height="693" alt="Screenshot 2026-05-21 at 15 48 14" src="https://github.com/user-attachments/assets/2cdf6b1f-c88f-4a60-9621-ba0fc46a9db6" />
+
+
+### P20E8 00
+
+> Defect in information emitted by engine ECU
+
+Properties:
+
+- Permanent fault
+- Incorrect received value
+
+Associated variables:
+
+- Engine speed: 1635 rpm
+- Gas pedal position: 30%
+- Speed: 44Km/h
+- Water temperature: 100°C
+- ECU Voltage: 14.3V
+- Adblue liquid pressure: 4.0 bar
+- External temperature: 24C
+- Adblue temperature (tank): 0
+- Amount of injected Adblue: 0  
+
+Interpretation:
+
+The gearbox ECU was receiving inconsistent torque / engine information from the engine ECU.
+
+At this stage, this was considered a secondary consequence rather than the primary failure.
+
+---
