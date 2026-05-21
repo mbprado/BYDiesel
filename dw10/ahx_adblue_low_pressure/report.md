@@ -595,3 +595,17 @@ That would strongly support:
 - Pressure sensor missreading
 
 rather than a temperature-related inhibition.
+
+---
+
+# Removing the tank and identifying the components
+
+<img width="1598" height="1307" alt="image" src="https://github.com/user-attachments/assets/80320938-a316-4bb4-af04-a0e663b7d112" />
+
+<img width="4032" height="3024" alt="IMG_2829" src="https://github.com/user-attachments/assets/6387a445-d64a-4322-916f-8206c514edce" />
+
+
+
+
+
+
