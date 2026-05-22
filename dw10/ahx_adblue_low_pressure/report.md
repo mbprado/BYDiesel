@@ -600,12 +600,22 @@ rather than a temperature-related inhibition.
 
 # Removing the tank and identifying the components
 
+## Components Overview
+
 <img width="1598" height="1307" alt="image" src="https://github.com/user-attachments/assets/80320938-a316-4bb4-af04-a0e663b7d112" />
 
+## Pressure sensor(left) and solenoid(right)
+<img width="4032" height="3024" alt="IMG_2826" src="https://github.com/user-attachments/assets/be504568-4fad-4c85-8d75-71a6c8778cd7" />
+
+<img width="4032" height="3024" alt="IMG_2827" src="https://github.com/user-attachments/assets/4c8df0ee-9089-4ffe-990e-c9f892c30487" />
+
+## Pump connector
 <img width="4032" height="3024" alt="IMG_2829" src="https://github.com/user-attachments/assets/6387a445-d64a-4322-916f-8206c514edce" />
 
 
 
+Another source:
+https://www.elektroda.com/rtvforum/topic3827598-60.html
 
 
 
