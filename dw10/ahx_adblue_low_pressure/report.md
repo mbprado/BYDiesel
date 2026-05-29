@@ -30,8 +30,8 @@ The vehicle presented intermittent adblue alerts and mileage countdown for start
 
 - Sometimes the car worked perfectly normally, specially if it runs before reaching operation temperture
 - It doen't affect car's performance.
-- Prevents Start/Stop (echo)
-- Faults stored in  ECU 
+- Inhibits Start/Stop System(eco)
+- Faults stored in ECU 
 
 # Initial Fault Codes
 
@@ -345,6 +345,7 @@ Reliable diagnosis usually includes:
 5. Verifying electrical supply
 6. Checking pressure retention after shutdown
 7. Inspecting injector and lines for leaks
+8. Inspect and test internal components
 
 ---
 
@@ -352,12 +353,13 @@ Reliable diagnosis usually includes:
 
 The following measurements were collected.
 
+---
 
 ## DeNOx Circuit information:
 
 <img width="1594" height="670" alt="Screenshot 2026-05-21 at 12 15 07" src="https://github.com/user-attachments/assets/19cdb8fa-0866-47a4-8d3d-cd6079305ad5" />
 
-## Observed Values
+### Observed Values
 
 - Engine speed: 821 rpm
 - Water temperature: 100°C
@@ -546,6 +548,7 @@ This combination is consistent with:
 - Internal tank module failure
 - Restricted reductant flow
 
+
 ## Important Diagnostic Observation
 
 Because the pressure display cannot show below 4 bar:
@@ -601,8 +604,6 @@ It stongly suggests:
 
 NOTE: In order to be sure of the collected values, I used a newer version of Diagbox (9.68). The results matched and some invalid parameters as "Fluid level" got valid values. 
 
-
- 
 ---
 
 # Removing the tank and identifying the components
@@ -666,7 +667,9 @@ CAUTION: Before removing the sensor, open the solenoid and pressurise the pump t
 - Pump works and produces enough pressure
 - Pressure sensor seemed dead
 
-# Finding replacement sensor
+---
+
+# Finding a replacement sensor
 
 <img width="1454" height="1694" alt="image" src="https://github.com/user-attachments/assets/73a5e8f4-b226-4b8b-b98a-c21fb16398cc" />
 
@@ -674,7 +677,7 @@ CAUTION: Before removing the sensor, open the solenoid and pressurise the pump t
 Officially, there is no individual part number for any of the internal component from the SCR system os PSA catalogs.  
 On servicebox, there is a part number 9818559280 whch corresponds to the whole adblue tank, wich includes the case and the system as as single unity. The cost was about 1200 eur, or about 800 eur for refusbished ones.  
 
-NOTE: If you are goint this sensor, you must choose **4~8bar** version
+NOTE: If you are going to buy this sensor, you must choose **4~8 bar** version!
 
 ## Workarounds
 There was some workarounds available on the internet, specially on French car Forum: https://frenchcarforum.co.uk/forum/viewtopic.php?t=81429, which suggests installig an external sensor to the tank due to the dificulty of finding an OEM or aftermarket sensor.  
@@ -683,6 +686,8 @@ There was some workarounds available on the internet, specially on French car Fo
 An aftermake option HM8500J has been reported as a viable candidate with a good success rate. I decided to give it a shot:
 <img width="1259" height="657" alt="image" src="https://github.com/user-attachments/assets/03566253-4ca6-4ce0-b42b-2964a7fd1c93" />
 Link from the time I was publishing it: https://www.alibaba.com/product-detail/High-Precision-1-FS-IP65-Automotive_1601634120858.html?spm=a2700.prosearch.normal_offer.d_image.7c0167afSWB6qn&priceId=ae93aa510ece4b74bdf1a3b1ed95c327
+
+---
 
 # Results
 
@@ -720,4 +725,23 @@ With the pressure reading correct, time for a road test, where I could observer 
 - Pressure is stabilized
 - There is injection of some amount of fluid
 - No DTC
+
+--- 
+
+# Conclusion
+
+During the tests it become clear that the culprit was the pressure sensor. 
+A 20 eur sensor, compared to 1200 eur full tank. This is absurd not only from the financial, but also from the waste perspective.  
+It's ironic that the companys are so concerned with enviroenmental system such as SCR, but seems not to care about disposal of plastic and electronics, components which are in majority, fully functional. 
+
+Another important aspect is how the "Part Swapping as Dianostic" become normal for the sake of easy of use and how people are accepting to spend money on unecessary part replacements. 
+
+---
+
+# Final considerations
+
+A defective pressure sensor can lead do side effecs such as:
+- pump failure caused by stress from the pump working excessively trying to reach the required pressure.
+- failure of n-mosfets drivers STD95N4F3 from the circuit board, also caused by the pump overload.
+- Always test all the components do validate all the proccess chain.
 
