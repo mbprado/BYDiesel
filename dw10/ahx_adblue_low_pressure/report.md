@@ -596,6 +596,21 @@ That would strongly support:
 
 rather than a temperature-related inhibition.
 
+## Important observation:
+
+When driving and the exaust temperature reaches 210°C, the pump noise was clearly audible for long period of time.  
+
+This behavior was confirmed, doing a actuator test on the diagnostic tool. During the diagnostic, I could clearly hear the pump working, but the pressore gauge didn't change. 
+It stongly suggests:  
+
+- Pump working but not producing enough pressure.
+- Pressure sensor failure
+- Logic issue. (less likely)
+
+NOTE: In order to be sure of the collected values, I used a newer version of Diagbox (9.68). The results matched and some invalid parameters as "Fluid level" got valid values. 
+
+
+ 
 ---
 
 # Removing the tank and identifying the components
@@ -604,7 +619,8 @@ rather than a temperature-related inhibition.
 
 <img width="1598" height="1307" alt="image" src="https://github.com/user-attachments/assets/80320938-a316-4bb4-af04-a0e663b7d112" />
 
-## Pressure sensor(left) and solenoid(right)
+## Pressure sensor(left) and solenoid(right)  
+
 <img width="4032" height="3024" alt="IMG_2826" src="https://github.com/user-attachments/assets/be504568-4fad-4c85-8d75-71a6c8778cd7" />
 
 <img width="4032" height="3024" alt="IMG_2827" src="https://github.com/user-attachments/assets/4c8df0ee-9089-4ffe-990e-c9f892c30487" />
@@ -612,10 +628,49 @@ rather than a temperature-related inhibition.
 ## Pump connector
 <img width="4032" height="3024" alt="IMG_2829" src="https://github.com/user-attachments/assets/6387a445-d64a-4322-916f-8206c514edce" />
 
+## Bench testing individual components
 
+> This Polish forum has tons of information regarding PSA SCR System and was used as source of some images: https://www.elektroda.com/rtvforum/topic3827598.html
 
-Another source:
-https://www.elektroda.com/rtvforum/topic3827598-60.html
+CAUTION: When testing components, always disconnect them from the board!
 
+### 1. Solenoid.  
+- Simple test: feed 5V to the solenoid pins in any polarity. It should click.
+    
+  On my tests, it was working as expected.  
 
+### 2. Pump.
+- Pump function: The pump has 2 connector pins, Black and Green/Yellow.
+  Feeding the pump 12V with polarity (-)Black and (+)Green/Yellow, will make the pump, suck fluid.  
+  Feeding the pump 12V with polarity (+)Black and (-)Green/Yellow, will make the pump pressurise the 
+reductant.
+- Pressure test: To properly test the pump pressure output, it's necessary to connect a pressure gauge on the output and keep the solenoid opened, otherwise it will pressurise the reductant.
+  The tank (or some adblue reservoir) must be connect to the urea input pipe.  
+  Connect the pressure gauge on the output, apply 5V to the solenoid to keep it opened and apply 12V using pressurising polarity. In few seconds, the gauge should reach 5-6bar.
+    
+  On my tests, the pump produced enough pressure very quickly (5.5bar).
+  
+### 3. Pressure sensor.
+CAUTION: Before removing the sensor, open the solenoid and pressurise the pump to empty the reductant.  
+
+- I used a bike pump in order to test the sensor. It was much easier to lock it to the sensor tip, but you can use anything that does not cross over 8bar.
+- Sensor connector has 3 pins:
+  (+5V) Red
+  (SIG) Yellow
+  (GND) Black
+- Apply 5V to the (+5V) and (GND) pins and connect a multimeter between (GND) and (SIG). Applying pressure to the sensor, the voltage on (SIG) should vary as in the graphic bellow:
+
+  <img width="800" height="517" alt="6800822400_1671483293_bigthumb" src="https://github.com/user-attachments/assets/8ffac59b-193c-4b01-8443-22818225e915" />
+  source:
+  https://www.elektroda.com/rtvforum/topic3827598-60.html
+
+  On my tests, the sensor didn't reacted at all, it was keeping 0.44V no matter the pressure applied.
+
+> There are extra parameters that can be tested, but are not relevant for my situation, for mor info, plesse follow: https://www.elektroda.com/rtvforum/topic3827598.html
+
+## Bench testing conclusions.
+
+- Solenoid works
+- Pump works and produces enough pressure
+- Pressure sensor seemed dead
 
