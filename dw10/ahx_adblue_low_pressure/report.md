@@ -674,3 +674,35 @@ CAUTION: Before removing the sensor, open the solenoid and pressurise the pump t
 - Pump works and produces enough pressure
 - Pressure sensor seemed dead
 
+# Finding replacement sensor
+
+<img width="1454" height="1694" alt="image" src="https://github.com/user-attachments/assets/73a5e8f4-b226-4b8b-b98a-c21fb16398cc" />
+
+## OEM Sensor
+Officially, there is no individual part number for any of the internal component from the SCR system os PSA catalogs.  
+On servicebox, there is a part number 9818559280 whch corresponds to the whole adblue tank, wich includes the case and the system as as single unity. The cost was about 1200 eur, or about 800 eur for refusbished ones.  
+
+NOTE: If you are goint this sensor, you must choose **4~8bar** version
+
+## Workarounds
+There was some workarounds available on the internet, specially on French car Forum: https://frenchcarforum.co.uk/forum/viewtopic.php?t=81429, which suggests installig an external sensor to the tank due to the dificulty of finding an OEM or aftermarket sensor.  
+
+## Other options
+An aftermake option HM8500J has been reported as a viable candidate with a good success rate. I decided to give it a shot:
+<img width="1259" height="657" alt="image" src="https://github.com/user-attachments/assets/03566253-4ca6-4ce0-b42b-2964a7fd1c93" />
+Link from the time I was publishing it: https://www.alibaba.com/product-detail/High-Precision-1-FS-IP65-Automotive_1601634120858.html?spm=a2700.prosearch.normal_offer.d_image.7c0167afSWB6qn&priceId=ae93aa510ece4b74bdf1a3b1ed95c327
+
+# Results
+
+## Comparing sensors
+Sensor took quite long time to be shipped due to clearance proccess. But comparing the sensors, they looked physically identical.  
+<img width="2610" height="1771" alt="image" src="https://github.com/user-attachments/assets/870acc38-32f2-46ec-bbc0-2daf65511383" />
+
+Testing the new sensor with the multimeter, I've got the correct curve. New sensor appeared to be ok.
+
+## Checking the parameters after installing.
+
+<img width="1532" height="685" alt="Screenshot 2026-05-29 at 9 54 12" src="https://github.com/user-attachments/assets/d75389bc-0ae1-452f-a231-7f6bf15caa44" />
+
+
+<img width="1492" height="613" alt="Screenshot 2026-05-29 at 10 03 20" src="https://github.com/user-attachments/assets/44ee54c3-00e5-4471-a37a-49553c315e4e" />
