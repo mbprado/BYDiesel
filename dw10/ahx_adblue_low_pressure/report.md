@@ -1,4 +1,4 @@
-# ---DRAFT--- DW10FD(AHX) – AD-blue low pressure error 
+# DW10FD(AHX) – AD-blue low pressure error 
 
 ## Vehicle / Engine Information
 
@@ -81,22 +81,14 @@ The following reasoning was established early:
 
 ## Internal adblue tank controller components are the main suspects.
 
-Removing the tank  from the support end letting the car reach 100°C, there was no sound of pump working
+Removing the tank  from the support end letting the car reach 100°C, there was sound of pump working
 
-Examples:
+This clearly indicates somehow the pump was working, but still the issues could be related to:
 
-- Broken shaft
-- Failed compressor wheel
-- Seized turbo
-
-These failures do not usually disappear intermittently.
-
-Therefore, attention shifted toward:
-
-- Sensor inconsistency
-- Turbo control logic
-- Wiring
-- Vacuum regulation
+- Seized pump with no enough power to generate pressure
+- Leaking
+- Incorrect pressure reading
+- Logic issue or system deauthorization 
 
 ---
 
@@ -702,7 +694,30 @@ Testing the new sensor with the multimeter, I've got the correct curve. New sens
 
 ## Checking the parameters after installing.
 
+### Initial Readings
+Initially, after the sensor replacement, the pressure issue still persisted. I had do execute 3 times ,the pressurization test trough the diagnostic tool (Works only on 9.68), only then I had the corrrect readings:
+
 <img width="1532" height="685" alt="Screenshot 2026-05-29 at 9 54 12" src="https://github.com/user-attachments/assets/d75389bc-0ae1-452f-a231-7f6bf15caa44" />
 
+#### Observed values:
+- Engine speed: 821 rpm
+- Water temperature: 98°C
+- Heating pipe percentage: 0%
+- AdBlue pressure: 5.92 bar *(pressure reads correctly)*
+- AdBlue reductant status: Full
+- Thermal aging: 28%
+- SCR catalyst temperature: 129°C
+- Amount to be injected: 0 mg/s
+- System flush state: Idle
+- AdBlue inside catalyst: 0 g
 
+
+### Road test
+With the pressure reading correct, time for a road test, where I could observer the fuid being injected on demand:
 <img width="1492" height="613" alt="Screenshot 2026-05-29 at 10 03 20" src="https://github.com/user-attachments/assets/44ee54c3-00e5-4471-a37a-49553c315e4e" />
+
+#### Observed behavior 
+- Pressure is stabilized
+- There is injection of some amount of fluid
+- No DTC
+
